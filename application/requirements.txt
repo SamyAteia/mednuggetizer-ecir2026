@@ -1,0 +1,35 @@
+# Core Flask dependencies
+Flask>=2.3.0
+Werkzeug>=2.3.0
+
+# Production WSGI server
+gunicorn>=21.2.0
+gevent>=23.9.1
+
+# PDF processing
+PyPDF2>=3.0.0
+
+# ML and NLP dependencies (CPU-optimized versions)
+# Use --no-deps with specific packages to avoid GPU dependencies
+sentence-transformers>=2.2.0
+bertopic>=0.15.0
+hdbscan>=0.8.29
+umap-learn>=0.5.3
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# PyTorch CPU-only (much smaller and faster to install)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# NLTK for text preprocessing
+nltk>=3.8.0
+
+# Google GenAI for LLM integration
+google-genai>=0.2.0
+
+# Additional utilities
+python-dotenv>=1.0.0
